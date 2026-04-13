@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <!-- Balance Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:background="@color/primary_blue"
+            android:padding="@dimen/padding_large"
+            android:layoutDirection="locale">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="space-between">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_balance"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_sm" />
+
+                <ImageButton
+                    android:id="@+id/balance_toggle"
+                    android:layout_width="@dimen/icon_md"
+                    android:layout_height="@dimen/icon_md"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Toggle Balance" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/balance_amount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ج.م. 0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_4xl"
+                android:textStyle="bold"
+                android:gravity="bottom|start"
+                android:layoutDirection="locale" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_xl"
+            android:layout_marginBottom="@dimen/margin_xl">
+
+            <Button
+                android:id="@+id/send_money_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height_medium"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_sm"
+                android:text="@string/send_money"
+                android:background="@color/primary_blue"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bill_payment_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height_medium"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_sm"
+                android:text="@string/pay_bills"
+                android:background="@color/primary_light_blue"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Recent Transactions Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="space-between"
+            android:layout_marginBottom="@dimen/margin_lg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_transactions"
+                android:textSize="@dimen/text_size_lg"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <ImageButton
+                android:id="@+id/refresh_button"
+                android:layout_width="@dimen/icon_md"
+                android:layout_height="@dimen/icon_md"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Refresh" />
+
+        </LinearLayout>
+
+        <!-- Transactions RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

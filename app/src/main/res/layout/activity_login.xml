@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="locale"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:textSize="@dimen/text_size_3xl"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/primary_blue"
+        android:layout_marginBottom="@dimen/margin_xlarge" />
+
+    <LinearLayout
+        android:id="@+id/phone_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_secondary"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/padding_medium">
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:hint="@string/enter_phone"
+                android:textDirection="locale"
+                android:background="@null"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_tertiary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otp_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_otp"
+            android:textSize="@dimen/text_size_lg"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="@dimen/margin_md" />
+
+        <EditText
+            android:id="@+id/otp_input"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_xl"
+            android:textColor="@color/text_primary"
+            android:background="@color/bg_secondary" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_large"
+        android:text="@string/next"
+        android:layout_marginTop="@dimen/margin_xl"
+        android:background="@color/primary_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_lg"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_lg">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/border_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="@dimen/text_size_sm"
+            android:textColor="@color/text_tertiary"
+            android:paddingHorizontal="@dimen/padding_md" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/border_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/biometric_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_large"
+        android:text="Biometric Login"
+        android:layout_marginTop="@dimen/margin_lg"
+        android:background="@color/primary_light_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_lg" />
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_xl"
+        android:visibility="gone" />
+
+</LinearLayout>

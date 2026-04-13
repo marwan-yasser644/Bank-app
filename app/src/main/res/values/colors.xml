@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#1E40AF</color>
+    <color name="primary_dark_blue">#1E3A8A</color>
+    <color name="primary_light_blue">#3B82F6</color>
+
+    <!-- Secondary Colors -->
+    <color name="egyptian_gold">#D4A574</color>
+    <color name="gold_light">#E8C4A0</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#16A34A</color>
+    <color name="error_red">#DC2626</color>
+    <color name="warning_orange">#EA580C</color>
+    <color name="info_blue">#3B82F6</color>
+
+    <!-- Status Specific -->
+    <color name="pending_yellow">#EAB308</color>
+    <color name="completed_green">#22C55E</color>
+    <color name="failed_red">#EF4444</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_light">#F3F4F6</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="bg_primary">#FFFFFF</color>
+    <color name="bg_secondary">#F9FAFB</color>
+    <color name="bg_tertiary">#F3F4F6</color>
+    <color name="bg_dark">#111827</color>
+
+    <!-- Border Colors -->
+    <color name="border_light">#E5E7EB</color>
+    <color name="border_medium">#D1D5DB</color>
+    <color name="border_dark">#9CA3AF</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_300">#D1D5DB</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="gray_900">#111827</color>
+
+    <!-- Overlay -->
+    <color name="overlay_light">#F0F0F0CC</color>
+    <color name="overlay_dark">#00000080</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+</resources>
